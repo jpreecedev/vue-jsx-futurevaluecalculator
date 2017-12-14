@@ -1,16 +1,24 @@
 import { mapState } from 'vuex'
+import { commit } from '../../store';
+
+import {
+  priceChangedAction,
+  mortgageLengthChangedAction,
+  expectedAnnualIncreaseChangedAction
+} from '../../store/actions';
+
 import TextField from '../Shared/TextField.jsx';
 
 const BasicDetails = {
   methods: {
     priceChanged(pricePaid) {
-      this.$store.commit('PRICE_PAID_CHANGED', pricePaid)
+      commit(priceChangedAction(pricePaid));
     },
     mortgageLengthChanged(mortgageLength) {
-      this.$store.commit('MORTGAGE_LENGTH_CHANGED', mortgageLength)
+      commit(mortgageLengthChangedAction(mortgageLength));
     },
     expectedAnnualIncreaseChanged(expectedAnnualIncrease) {
-      this.$store.commit('EXPECTED_ANNUAL_INCREASE_CHANGED', expectedAnnualIncrease)
+      commit(expectedAnnualIncreaseChangedAction(expectedAnnualIncrease));
     }
   },
   computed: mapState({

@@ -5,7 +5,7 @@ import "./styles/vendor.scss";
 import "./styles/app.scss";
 
 import App from './components/App.jsx';
-import store from './store'
+import { store } from './store'
 
 Vue.use(Vuex)
 

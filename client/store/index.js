@@ -5,9 +5,11 @@ import * as mutations from './mutations'
 
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
+export const store = new Vuex.Store({
   state,
   mutations
-})
+});
 
-export default store
+export const commit = action => {
+  store.commit(action.type, action.payload);
+};
