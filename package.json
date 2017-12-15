@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start": "webpack-dev-server",
+    "test": "npm run cypress:open",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/report"
   },
@@ -19,6 +20,12 @@
     "css-loader": "^0.28.7",
     "cypress": "^1.1.4",
     "eslint": "^4.13.1",
+    "eslint-config-esnext": "^2.0.0",
+    "eslint-config-recommended": "^2.0.0",
+    "eslint-plugin-eslint-plugin": "^1.2.0",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-vue": "^4.0.0-beta.2",
+    "eslint-plugin-vue-libs": "^2.0.1",
     "html-webpack-plugin": "^2.30.1",
     "mocha": "^4.0.1",
     "mochawesome": "^3.0.0",

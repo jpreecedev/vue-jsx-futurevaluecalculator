@@ -8,8 +8,8 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   state,
   mutations
-});
+})
 
 export const commit = action => {
-  store.commit(action.type, action.payload);
-};
+  store.commit(action.type, action.payload)
+}

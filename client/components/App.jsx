@@ -1,13 +1,13 @@
-import FutureValueCalculator from './FutureValueCalculator.jsx';
+import FutureValueCalculator from './FutureValueCalculator.jsx'
 
 const App = {
-    render(h) {
-      return (
-        <div class="mb-5">
-           <FutureValueCalculator />
-         </div>
-       );
-    }
-};
+  render (h) {
+    return (
+      <div class='mb-5'>
+        <FutureValueCalculator />
+      </div>
+    )
+  }
+}
 
-export default App;
+export default App
